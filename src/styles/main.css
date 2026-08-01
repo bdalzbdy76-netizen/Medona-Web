@@ -1,0 +1,37 @@
+/*
+  Global Base Styles
+  الألوان والقيم الفعلية موجودة في tokens.css (Design Tokens)
+  هذا الملف يحتوي فقط على إعادة الضبط الأساسية (Reset) والأنماط العامة للمستند.
+*/
+
+@import "./tokens.css";
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&display=swap');
+@import "./components.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-base);
+  background: var(--color-bg);
+  color: var(--color-text);
+  direction: rtl;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+}

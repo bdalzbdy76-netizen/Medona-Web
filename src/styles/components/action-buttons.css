@@ -1,0 +1,33 @@
+.action-buttons {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.action-buttons__btn {
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-base);
+}
+
+.action-buttons__btn--edit {
+  background: #dbeafe;
+  color: var(--color-primary);
+}
+
+.action-buttons__btn--edit:hover {
+  background: #bfdbfe;
+}
+
+.action-buttons__btn--delete {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+}
+
+.action-buttons__btn--delete:hover {
+  background: #fecaca;
+}

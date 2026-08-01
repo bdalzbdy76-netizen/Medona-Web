@@ -1,0 +1,28 @@
+.areas-form-title {
+  margin: 0 0 var(--space-md);
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.areas-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .areas-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.areas-form-actions {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+}
+
+.areas-form-actions .btn {
+  flex: 1;
+}
